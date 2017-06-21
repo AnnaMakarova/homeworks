@@ -10,4 +10,9 @@ function handleTableClick(event) {
   sortTable(propName, dir);
 }
 
-document.getElementsByTagName('table')[0].addEventListener('click', handleTableClick);
+/********************************
+ * Не менять код ниже           *
+ ********************************/
+
+const table = document.querySelector('table');
+table.addEventListener('click', handleTableClick);
